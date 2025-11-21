@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inclusão - GreenPath AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Painel de Inclusão Social</h1>
+</header>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="trilhas.html">Trilhas</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="#simulacoes">Simulações RV/RA</a>
+    <a href="inclusao.html">Inclusão</a>
+    <a href="contato.html">Contato</a>
+    <a href="#admin">Admin (Empresa)</a>
+</nav>
+<main>
+    <h2>Distribuição de Usuários por Grupo</h2>
+    <canvas id="graficoInclusao" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('graficoInclusao').getContext('2d');
+        const grafico = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Jovens', 'Mulheres', 'Baixa Renda', 'Trabalhadores Setores Poluentes'],
+                datasets: [{
+                    data: [35, 25, 20, 20],
+                    backgroundColor: ['#2d7a4b', '#3f9e64', '#a3d9a5', '#95c88a']
+                }]
+            }
+        });
+    </script>
+</main>
+<footer>
+    &copy; 2025 GreenPath AI
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

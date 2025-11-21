@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace - GreenPath AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Marketplace de Oportunidades Verdes</h1>
+</header>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="trilhas.html">Trilhas</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="#simulacoes">Simulações RV/RA</a>
+    <a href="inclusao.html">Inclusão</a>
+    <a href="contato.html">Contato</a>
+    <a href="#admin">Admin (Empresa)</a>
+</nav>
+
+<main>
+    <h2>Vagas Disponíveis</h2>
+    <ul id="vagasLista"></ul>
+    <script>
+        const vagas = [
+            {empresa: 'SolarTech', titulo: 'Técnico em Painéis Solares'},
+            {empresa: 'AgroVerde', titulo: 'Agricultor Sustentável'},
+            {empresa: 'EcoEnergia', titulo: 'Analista de Eficiência Energética'}
+        ];
+        const lista = document.getElementById('vagasLista');
+        vagas.forEach(v => {
+            const li = document.createElement('li');
+            li.textContent = `${v.empresa} - ${v.titulo}`;
+            lista.appendChild(li);
+        });
+    </script>
+</main>
+<footer>
+    &copy; 2025 GreenPath AI
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

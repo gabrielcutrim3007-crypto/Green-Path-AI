@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilhas - GreenPath AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Trilhas de Aprendizado</h1>
+</header>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="trilhas.html">Trilhas</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="#simulacoes">Simulações RV/RA</a>
+    <a href="inclusao.html">Inclusão</a>
+    <a href="contato.html">Contato</a>
+    <a href="#admin">Admin (Empresa)</a>
+</nav>
+<main>
+    <h2>Simulação de Trilhas Personalizadas</h2>
+    <p>Selecione seu perfil para receber trilhas recomendadas:</p>
+    <select id="perfil">
+        <option value="iniciante">Iniciante</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="avancado">Avançado</option>
+    </select>
+    <button onclick="gerarTrilhas()">Gerar Trilhas</button>
+    <ul id="trilhasLista"></ul>
+</main>
+<script>
+function gerarTrilhas() {
+    const perfil = document.getElementById('perfil').value;
+    const lista = document.getElementById('trilhasLista');
+    lista.innerHTML = '';
+    let trilhas = [];
+    if(perfil === 'iniciante') trilhas = ['Energia Solar - Básico', 'Agricultura Sustentável - Iniciante', 'Gestão de Água - Inicial'];
+    if(perfil === 'intermediario') trilhas = ['Energia Eólica - Intermediário', 'Economia Circular - Intermediário', 'Eficiência Energética - Intermediário'];
+    if(perfil === 'avancado') trilhas = ['Bioeconomia Avançada', 'Gestão Sustentável de Resíduos', 'Inovação em Energia Renovável'];
+    trilhas.forEach(trilha => {
+        const li = document.createElement('li');
+        li.textContent = trilha;
+        lista.appendChild(li);
+    });
+}
+</script>
+<footer>
+    &copy; 2025 GreenPath AI
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

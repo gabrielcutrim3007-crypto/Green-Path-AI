@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenPath AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>GreenPath AI</h1>
+    <p>Plataforma Inteligente de Requalificação para a Economia Verde</p>
+</header>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="trilhas.html">Trilhas</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="#simulacoes">Simulações RV/RA</a>
+    <a href="inclusao.html">Inclusão</a>
+    <a href="#admin">Admin (Empresa)</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Bem-vindo à GreenPath AI</h2>
+        <p>Aceleramos sua requalificação para carreiras verdes com tecnologia, personalização e inclusão.</p>
+        <button onclick="diagnostico()">Começar Diagnóstico</button>
+    </section>
+
+    <section id="trilhas">
+        <h2>Trilhas Personalizadas</h2>
+        <p>Progresso atual: <span id="progresso">0</span>/<span id="totalModulos">0</span></p>
+        <ul id="listaTrilhas"></ul>
+        <button onclick="avancarModulo()">Avançar Módulo</button>
+    </section>
+
+    <section id="marketplace">
+        <h2>Marketplace de Vagas</h2>
+        <ul id="listaVagas"></ul>
+        <button onclick="mostrarVagas()">Mostrar Vagas Recomendadas</button>
+    </section>
+
+    <section id="simulacoes">
+        <h2>Simulações RV/RA</h2>
+        <p id="simulacaoAviso" style="color:red;"></p>
+        <div id="simulacaoContainer" style="width:100%;height:400px;"></div>
+        <button onclick="iniciarSimulacao('solar')">Treinar Instalação de Painéis Solares</button>
+        <button onclick="iniciarSimulacao('eolica')">Inspeção de Turbinas Eólicas</button>
+    </section>
+
+    <section id="inclusao">
+        <h2>Painel de Inclusão Social</h2>
+        <canvas id="graficoInclusao" width="400" height="200"></canvas>
+        <button onclick="painelInclusao()">Atualizar Painel</button>
+    </section>
+
+    <section id="admin">
+        <h2>Cadastro de Vagas (Empresa)</h2>
+        <form id="formVaga" onsubmit="cadastrarVaga(event)">
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" required>
+
+            <label for="titulo">Título da Vaga:</label>
+            <input type="text" id="titulo" required>
+
+            <label for="nivel">Nível da Vaga:</label>
+            <select id="nivel" required>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+
+            <button type="submit">Cadastrar Vaga</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 GreenPath AI
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
