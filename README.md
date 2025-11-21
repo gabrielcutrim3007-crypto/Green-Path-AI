@@ -2,7 +2,7 @@
 
 GreenPath AI é uma plataforma inteligente de requalificação voltada para a Economia Verde, projetada para ajudar trabalhadores — especialmente os mais vulneráveis — a migrarem para profissões sustentáveis em rápido crescimento. A solução enfrenta desafios como falta de acesso a treinamento moderno, desatualização profissional, exclusão socioeconômica e carência de mão de obra verde qualificada.
 
-##Como funciona
+## Como funciona
 
 A plataforma utiliza Inteligência Artificial para diagnosticar automaticamente as competências atuais de cada usuário e gerar trilhas personalizadas de aprendizagem verde. Além disso, emprega Realidade Virtual e Aumentada para oferecer treinamentos práticos em ambientes simulados (como instalação de painéis solares, agricultura regenerativa, gestão de água e manutenção de turbinas eólicas).
 
@@ -14,7 +14,7 @@ Marketplace de Oportunidades Verdes, conectando formandos a vagas reais do setor
 
 Acesso multiplataforma, garantindo aprendizado via celular, computador ou kits de RV.
 
-##Diferenciais
+## Diferenciais
 
 Personalização total via IA.
 
@@ -55,7 +55,7 @@ Criptografia de dados e simulações de 60 FPS.
 
 Respostas rápidas (≤2s) e acessibilidade AA.
 
-##Regras de Negócio
+## Regras de Negócio
 
 Certificação apenas após trilha concluída.
 
@@ -67,7 +67,7 @@ Aderência às competências da OIT/ONU.
 
 Liberação de simulações somente após teoria.
 
-##Escopo do MVP (6 meses)
+## Escopo do MVP (6 meses)
 
 Inclui:
 
@@ -87,7 +87,7 @@ Fora do escopo:
 
 Simulações avançadas, integrações governamentais, realidade mista e multilíngue (além de PT-BR).
 
-##Público-Alvo
+## Público-Alvo
 
 Trabalhadores em setores automatizáveis.
 
@@ -111,6 +111,6 @@ Crescimento acelerado de IA e RV no setor educacional.
 
 Necessidade urgente de inclusão para evitar desigualdades digitais.
 
-##Conclusão
+## Conclusão
 
 A GreenPath AI promove uma Transição Justa ao unir IA, realidade imersiva e inclusão produtiva, criando caminhos rápidos e acessíveis para que milhões de pessoas ingressem nas profissões verdes do futuro. A plataforma se posiciona como elo entre trabalhadores vulneráveis e o setor econômico que mais cresce no mundo — oferecendo uma requalificação ética, escalável e profundamente personalizada.
