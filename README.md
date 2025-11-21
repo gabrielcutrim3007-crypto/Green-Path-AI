@@ -26,7 +26,7 @@ Atualização contínua baseada na demanda real das empresas.
 
 Foco em carreiras verdes emergentes.
 
-##Requisitos Essenciais
+## Requisitos Essenciais
 Funcionais:
 
 Diagnóstico automático de competências (IA).
